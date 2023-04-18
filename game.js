@@ -141,7 +141,6 @@ function moveTo(id1, id2) {
     tab[start[0]][start[1]] = 0;
 }
 
-/* ---------//--------------------//------------*/
 
 function display() {
     for(var i=0; i<3; i++) {
@@ -149,7 +148,6 @@ function display() {
     }
 }
 
-/* ------//---------------------//--------------*/
 function isValid(id1, id2) {
     var start = id1.split("-")[1];
     var end = id2.split("-")[1];
@@ -202,7 +200,6 @@ function isValid(id1, id2) {
     return false;
 }
 
-/* --------//-----------------//----------------*/
 
 function isAlignedX(x){
     var compt = 0;
@@ -249,7 +246,6 @@ function isAlignedDiag(x){
     return false;
 }
 
-/* --------//------------------//---------------*/
 
 function gameOver(x){
     if(isAlignedX(x) || isAlignedY(x) || isAlignedDiag(x))
