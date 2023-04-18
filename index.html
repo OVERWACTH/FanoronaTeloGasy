@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo.gif" />
+  <title>PINGO</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+   
+  </style>
+</head>
+<body>
+  <div class="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <div class="morphisme">
+    <h1 class="titre">E-fanorona-Telo</h1>
+  </div>
+
+  <div class="container player1">
+    <div class="vertical"></div>
+    <div class="horizontal"></div>
+    <div class="diagonal-left"></div>
+    <div class="diagonal-right"></div>
+
+    <div id="col-00" class="position top left white"></div>
+    <div id="col-01" class="position top center white"></div>
+    <div id="col-02" class="position top right white"></div>
+
+    <div id="col-10" class="position mid left"></div>
+    <div id="col-11" class="position mid center"></div>
+    <div id="col-12" class="position mid right"></div>
+
+    <div id="col-20" class="position bottom left black"></div>
+    <div id="col-21" class="position bottom center black"></div>
+    <div id="col-22" class="position bottom right black"></div>
+  </div>
+
+  <script src="game.js"></script>
+  <script>
+    window.addEventListener('load', function() {
+      const preloader = document.querySelector('.preloader');
+      preloader.classList.add('hide');
+    });
+  </script>
+</body>
+</html>
